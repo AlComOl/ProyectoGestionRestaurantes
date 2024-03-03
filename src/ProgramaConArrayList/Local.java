@@ -31,11 +31,67 @@ public class Local {
 	public void setIdLocal(int idLocal) {
 		this.idLocal = idLocal;
 	}
+	
+	
+	public String getEstadoLocal() {
+		return estadoLocal;
+	}
+
+
+	public void setEstadoLocal(String estadoLocal) {
+		this.estadoLocal = estadoLocal;
+	}
+
+
+	public String getHorariosLocal() {
+		return horariosLocal;
+	}
+
+
+	public void setHorariosLocal(String horariosLocal) {
+		this.horariosLocal = horariosLocal;
+	}
+
+
+	public String getDireccionLocal() {
+		return direccionLocal;
+	}
+
+
+	public void setDireccionLocal(String direccionLocal) {
+		this.direccionLocal = direccionLocal;
+	}
+
+
+	public String getUbicacionLocal() {
+		return ubicacionLocal;
+	}
+
+
+	public void setUbicacionLocal(String ubicacionLocal) {
+		this.ubicacionLocal = ubicacionLocal;
+	}
+
+
+	public String getGerenteLocal() {
+		return gerenteLocal;
+	}
+
+
+	public void setGerenteLocal(String gerenteLocal) {
+		this.gerenteLocal = gerenteLocal;
+	}
+
+
 	@Override
 	public String toString() {
 		
-	return "Local " + idLocal + " - Estado: " + estadoLocal + ", Horarios: " + horariosLocal +
-            ", Dirección: " + direccionLocal + ", Ubicación: " + ubicacionLocal + ", Gerente: " + gerenteLocal;
+	return "\n Local " + idLocal + 
+			"\n - Estado: " + estadoLocal + 
+			"\n Horarios: " + horariosLocal +
+            "\n Dirección: " + direccionLocal +
+            "\n Ubicación: " + ubicacionLocal + 
+            "\n Gerente: " + gerenteLocal;
 	}
 
 }

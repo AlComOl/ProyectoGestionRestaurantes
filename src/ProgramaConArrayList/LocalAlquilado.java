@@ -15,4 +15,28 @@ public class LocalAlquilado extends Local{
 		this.fechaAlquiler=fechaAlquiler;
 		this.tipoLocal=tipoLocal;
 	}
+
+//	getters setters
+	public String getFechaAlquiler() {
+		return fechaAlquiler;
+	}
+
+
+	public void setFechaAlquiler(String fechaAlquiler) {
+		this.fechaAlquiler = fechaAlquiler;
+	}
+
+
+	public String getTipoLocal() {
+		return tipoLocal;
+	}
+
+
+	public void setTipoLocal(String tipoLocal) {
+		this.tipoLocal = tipoLocal;
+	}
+	
+
+	
+	
 }
