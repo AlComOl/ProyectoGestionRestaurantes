@@ -3,10 +3,12 @@ import java.util.*;
 /**************************************
 *@author acome
 
-Entrega proyecto ArrayList Cadenas 
-*
-*
-*
+En esta segunda entrega el programa principal o alguna clase tendrá que tener:
+
+    un array o un arrayList de objetos.
+    herencia
+    tratamiento de cadenas
+    si es posible vectores o matrices
 ***************************************/
 public class LocalPropio extends Local{
 

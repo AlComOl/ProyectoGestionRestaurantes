@@ -4,10 +4,12 @@ import java.util.*;
 /**************************************
 *@author acome
 
-Entrega proyecto ArrayList Cadenas 
-*
-*
-*
+En esta segunda entrega el programa principal o alguna clase tendrá que tener:
+
+    un array o un arrayList de objetos.
+    herencia
+    tratamiento de cadenas
+    si es posible vectores o matrices
 ***************************************/
 
 public class RegistrodeLocales {
@@ -200,7 +202,12 @@ public class RegistrodeLocales {
 		return rdo;
 	}	
 	
-	
+	/*****************************************************
+		@param subCadena
+		@descripcion itera por los locales y si encuentra la 
+		direccion contiene la subcadena la muestra
+
+	******************************************************/
 	public static void busquedaDireccion(String subCadena) {
 	    for (Local local : Locales) {
 	        String direccion = local.getDireccionLocal();
