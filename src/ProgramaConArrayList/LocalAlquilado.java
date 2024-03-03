@@ -1,6 +1,13 @@
 package ProgramaConArrayList;
 import java.util.*;
+/**************************************
+*@author acome
 
+Entrega proyecto ArrayList Cadenas 
+*
+*
+*
+***************************************/
 public class LocalAlquilado extends Local{
 
 	//atributos
@@ -36,7 +43,14 @@ public class LocalAlquilado extends Local{
 		this.tipoLocal = tipoLocal;
 	}
 	
-
+	@Override
+	public String toString() {//lo mismo con la otra clase
+		
+	return super.toString()
+			+"\n Fecha de Alquiler: " + fechaAlquiler 
+			+"\n Horarios: " + tipoLocal ;
+			
+	}
 	
 	
 }

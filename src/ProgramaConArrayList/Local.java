@@ -86,8 +86,7 @@ public class Local {
 	@Override
 	public String toString() {
 		
-	return "\n Local " + idLocal + 
-			"\n - Estado: " + estadoLocal + 
+	return "\n Local " + idLocal +
 			"\n Horarios: " + horariosLocal +
             "\n Dirección: " + direccionLocal +
             "\n Ubicación: " + ubicacionLocal + 

@@ -1,6 +1,13 @@
 package ProgramaConArrayList;
 import java.util.*;
+/**************************************
+*@author acome
 
+Entrega proyecto ArrayList Cadenas 
+*
+*
+*
+***************************************/
 public class LocalPropio extends Local{
 
     // atributo
