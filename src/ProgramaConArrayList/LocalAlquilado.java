@@ -46,7 +46,12 @@ public class LocalAlquilado extends Local{
 	}
 	
 	@Override
-	public String toString() {//lo mismo con la otra clase
+	/*******************************************************
+	 * @descripcion la funcion toString muestra los atributos
+	 * del padre y la de la clase hija
+	 * 
+	 * **************************************************/
+	public String toString() {
 		
 	return super.toString()
 			+"\n Fecha de Alquiler: " + fechaAlquiler 

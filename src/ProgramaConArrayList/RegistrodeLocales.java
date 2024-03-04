@@ -32,6 +32,7 @@ public class RegistrodeLocales {
 		case 2:
 			System.out.println("Introduce el ID del Local");
 			int idLocal = sc.nextInt();
+			sc.nextLine();
 			
 			int encontrado=	buscarLocal(idLocal);
 			if(encontrado!=-1) {
@@ -69,7 +70,11 @@ public class RegistrodeLocales {
 	
 	}
 	
-	
+	/*******************************
+	 * @author acome
+	 * @descripcion es el menu del main
+	 * 
+	 * ****************************/
 	public static void getmenu() {
 		System.out.println("Menu:");
         System.out.println("1. Anadir Local");
@@ -101,15 +106,15 @@ public class RegistrodeLocales {
 			System.out.println("Introduce  IdLocal (INT)");
 				idLocal=sc.nextInt();
 				sc.nextLine();
-			System.out.println("Introduce estadoLoca Stringl");
+			System.out.println("Introduce el estado del Local (Buen Estado, Mal Estado)");
 				estadoLocal=sc.nextLine();
-			System.out.println("Introduce horariosLocal String");
+			System.out.println("Introduce horarios apetura y cierre del local (Ejemplo 9:00am 5:00pm)");
 				horariosLocal=sc.nextLine();
-			System.out.println("Introduce direccionLocal String");
+			System.out.println("Introduce la direccion del Local(Calle y numero String)");
 				direccionLocal=sc.nextLine();
-			System.out.println("Introduce ubicacionLocal String");
+			System.out.println("Introduce ubicacionLocal (cordenas en google maps)");
 				ubicacionLocal=sc.nextLine();
-			System.out.println("Introduce gerenteLocal int");
+			System.out.println("Introduce Nombre y Apellodos del Gerente del Local (String)");
 				gerenteLocal=sc.nextLine();
 			byte key=0;
 		System.out.println("\n 1.-Local Alquilado  \n 2.-Local en Propiedad");	
@@ -120,10 +125,10 @@ public class RegistrodeLocales {
 			//VALORES DE LOCAL
 			
 		case 1://LOQUILADO
-				System.out.println("Introduce fechaAlquiler String");
+				System.out.println("Introduce Fecha en la que se Alquilo el Local (String 12-02-24)");
 				fechaAlquiler=sc.nextLine();
 				
-				System.out.println("Introduce tipoLocal String");
+				System.out.println("Introduce Si esta Alquilado el local o es en propiedad (Alquilado propiedad) String");
 				tipoLocal=sc.nextLine();
 				
 //				instanciamos nuevo local alquilado
@@ -137,27 +142,24 @@ public class RegistrodeLocales {
 				key=sc.nextByte();
 				break;
 			case 2://LOCALPROPIO
-				System.out.println("Introduce nombrePropiedad String");
+				System.out.println("Introduce nombre del Local  (String)");
 				nombrePropiedad=sc.nextLine();
 				
-				System.out.println("Introduce fechaCompra Stringl");
+				System.out.println("Introduce fecha e  la que se Compro el Local (String)");
 				fechaCompra=sc.nextLine();
 				
-				System.out.println("Introduce metrosLocal String");
+				System.out.println("Introduce metros del Local");
 				metrosLocal=sc.nextInt();
 				sc.nextLine(); // Consumir el salto de línea
 				
-				System.out.println("Introduce fechaPagoIBI String");
+				System.out.println("Introduce fecha e la que se hace el Pago del IBI (String)");
 				fechaPagoIBI=sc.nextLine();
 				
-				System.out.println("Introduce precioIBI String");
+				System.out.println("Introduce precio del IBI (String)");
 				precioIBI=sc.nextInt();
+
 				
-				System.out.println("Introduce idLocal int");
-				idLocal=sc.nextInt();
-				sc.nextLine(); // Consumir el salto de línea
-				
-				System.out.println("Introduce estadoLocal INT");
+				System.out.println("Introduce estado en el que esta el Local (String)");
 				estadoLocal=sc.nextLine();//
 				
 		

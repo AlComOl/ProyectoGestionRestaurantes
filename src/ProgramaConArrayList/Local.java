@@ -1,4 +1,14 @@
 package ProgramaConArrayList;
+/**************************************
+*@author acome
+
+En esta segunda entrega el programa principal o alguna clase tendrá que tener:
+
+    un array o un arrayList de objetos.
+    herencia
+    tratamiento de cadenas
+    si es posible vectores o matrices
+***************************************/
 
 public class Local {
 	
@@ -84,6 +94,11 @@ public class Local {
 
 
 	@Override
+	/*******************************************************
+	 * @descripcion la funcion toString muestra los atributos
+	 * del padre
+	 * 
+	 * **************************************************/
 	public String toString() {
 		
 	return "\n Local " + idLocal +
