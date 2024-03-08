@@ -19,13 +19,13 @@ public class LocalAlquilado extends Local{
 	
 //	constructor
 	
-	public LocalAlquilado( int idLocal, String estadoLocal, String horariosLocal, String direccionLocal,String ubicacionLocal,String gerenteLocal,String fechaAlquiler,String tipoLocal) {
-		super(idLocal, estadoLocal, horariosLocal,direccionLocal,ubicacionLocal,gerenteLocal);
+	public LocalAlquilado(String estadoLocal, String horariosLocal, String direccionLocal,String ubicacionLocal,String gerenteLocal,String fechaAlquiler,String tipoLocal) {
+		super(estadoLocal, horariosLocal,direccionLocal,ubicacionLocal,gerenteLocal);
 		this.fechaAlquiler=fechaAlquiler;
 		this.tipoLocal=tipoLocal;
 	}
 
-//	getters setters
+//	getters settersS
 	public String getFechaAlquiler() {
 		return fechaAlquiler;
 	}

@@ -103,9 +103,9 @@ public class RegistrodeLocales {
 			String fechaAlquiler;
 			System.out.println("Introduce valores comunes");
 			
-			System.out.println("Introduce  IdLocal (INT)");
-				idLocal=sc.nextInt();
-				sc.nextLine();
+//			System.out.println("Introduce  IdLocal (INT)");
+//				idLocal=sc.nextInt();
+//				sc.nextLine();
 			System.out.println("Introduce el estado del Local (Buen Estado, Mal Estado)");
 				estadoLocal=sc.nextLine();
 			System.out.println("Introduce horarios apetura y cierre del local (Ejemplo 9:00am 5:00pm)");
@@ -129,10 +129,10 @@ public class RegistrodeLocales {
 				fechaAlquiler=sc.nextLine();
 				
 				System.out.println("Introduce Si esta Alquilado el local o es en propiedad (Alquilado propiedad) String");
-				tipoLocal=sc.nextLine();
+				tipoLocal=sc.nextLine();//preguntar a gema 
 				
 //				instanciamos nuevo local alquilado
-				LocalAlquilado l1=new LocalAlquilado(idLocal, estadoLocal, horariosLocal, direccionLocal, ubicacionLocal, gerenteLocal, fechaAlquiler, tipoLocal);
+				LocalAlquilado l1=new LocalAlquilado(estadoLocal, horariosLocal, direccionLocal, ubicacionLocal, gerenteLocal, fechaAlquiler, tipoLocal);
 				
 //				introducimos el local en el arraylist
 				Locales.add(l1);
@@ -165,10 +165,10 @@ public class RegistrodeLocales {
 		
 //		instanciamos nuevo local alquilado
 				
-				LocalPropio lp1=new LocalPropio(nombrePropiedad, fechaCompra, metrosLocal,fechaPagoIBI, precioIBI, idLocal, estadoLocal, horariosLocal, direccionLocal, ubicacionLocal, gerenteLocal);
+				LocalPropio lp1=new LocalPropio(nombrePropiedad, fechaCompra, metrosLocal,fechaPagoIBI, precioIBI, estadoLocal, horariosLocal, direccionLocal, ubicacionLocal, gerenteLocal);
 //				introducimos el local en el array
 				Locales.add(lp1);
-				System.out.println("El Local ha sido añadido satisfactorioamente");
+				System.out.println("El Local ha sido añadido satisfactoriamente");
 				getmenu();
 				key=sc.nextByte();
 				

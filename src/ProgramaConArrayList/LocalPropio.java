@@ -22,8 +22,8 @@ public class LocalPropio extends Local{
     
     // constructor
     
-    public LocalPropio(String nombrePropiedad, String fechaCompra, int metrosLocal, String fechaPagoIBI, int precioIBI, int idLocal, String estadoLocal, String horariosLocal, String direccionLocal, String ubicacionLocal, String gerenteLocal) {
-        super(idLocal, estadoLocal, horariosLocal, direccionLocal, ubicacionLocal, gerenteLocal);
+    public LocalPropio(String nombrePropiedad, String fechaCompra, int metrosLocal, String fechaPagoIBI, int precioIBI, String estadoLocal, String horariosLocal, String direccionLocal, String ubicacionLocal, String gerenteLocal) {
+        super(estadoLocal, horariosLocal, direccionLocal, ubicacionLocal, gerenteLocal);
         this.nombrePropiedad = nombrePropiedad;
         this.fechaCompra = fechaCompra;
         this.metrosLocal = metrosLocal;

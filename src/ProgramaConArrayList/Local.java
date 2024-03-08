@@ -13,7 +13,8 @@ En esta segunda entrega el programa principal o alguna clase tendrá que tener:
 public class Local {
 	
 //	atributos
-	protected  int idLocal;
+	protected static int id=0;
+	protected int idLocal;
 	protected String estadoLocal;
 	protected String horariosLocal;
 	protected String direccionLocal;
@@ -23,8 +24,12 @@ public class Local {
 	
 //	constructor
 	
-	public Local(int idLocal,String estadoLocal, String horariosLocal, String direccionLocal, String ubicacionLocal, String gerenteLocal) {
-		this.idLocal=idLocal;
+	
+	
+	public Local(String estadoLocal, String horariosLocal, String direccionLocal, String ubicacionLocal, String gerenteLocal) {
+		
+		id++;
+		this.idLocal=id;
 		this.estadoLocal=estadoLocal;
 		this.horariosLocal=horariosLocal;
 		this.direccionLocal=direccionLocal;
@@ -107,5 +112,6 @@ public class Local {
             "\n Ubicación: " + ubicacionLocal + 
             "\n Gerente: " + gerenteLocal;
 	}
+	
 
 }
