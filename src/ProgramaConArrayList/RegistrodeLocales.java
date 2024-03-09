@@ -18,9 +18,9 @@ public class RegistrodeLocales {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		byte key;
+		byte key=0;
 	do {
-		key = 0;
+		
 		getmenu();
 		key = sc.nextByte();
 		

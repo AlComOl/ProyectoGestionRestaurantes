@@ -14,8 +14,10 @@ public class Local {
 	
 //	atributos
 	protected static int id=0;
-	protected  int idLocal=0;
-	protected String iDEstado;
+	protected  int idLocal;
+	protected int estadoOperacion;
+	public final static int ABIERTO=0, CERRADO=1, ENREFORMA=2;
+	protected static final String []estadoOperaciones= {"Abierto","Cerrado","EnReforma"};
 	protected String horarioApertura;
 	protected String direccionLocal;
 	protected String localidad;
@@ -26,14 +28,16 @@ public class Local {
 	
 //	constructor
 	
-	public Local(String iDEstado, String horarioApertura, String direccionLocal, String localidad, String gerenteLocal, int codigoPostal,double metros) {
+	public Local(int estadoOperacion, String horarioApertura, String direccionLocal, 
+			String localidad, String gerenteLocal, int codigoPostal,double metros) {
 		id++;
 		this.idLocal=id;
-		this.iDEstado=iDEstado;
+		this.estadoOperacion=estadoOperacion;
 		this.horarioApertura=horarioApertura;
 		this.direccionLocal=direccionLocal;
 		this.localidad=localidad;
 		this.gerenteLocal=gerenteLocal;
+		this.codigoPostal=codigoPostal;
 		this.metros=metros;
 		
 		
@@ -50,13 +54,13 @@ public class Local {
 	}
 
 
-	public String getiDEstado() {
-		return iDEstado;
+	public int getiDEstado() {
+		return estadoOperacion;
 	}
 
 
-	public void setiDEstado(String iDEstado) {
-		this.iDEstado = iDEstado;
+	public void setiDEstado(int estadoOperacion) {
+		this.estadoOperacion = estadoOperacion;
 	}
 
 
@@ -122,9 +126,16 @@ public class Local {
 
 	@Override
 	public String toString() {
-		return "Local [iDEstado=" + iDEstado + ", horarioApertura=" + horarioApertura + ", direccionLocal="
+		String cadenaOperacion="";
+		  switch (estadoOperacion){
+		  case 1: cadenaOperacion="Abierto";break;
+		  case 2: cadenaOperacion="Cerrado";break;
+		  case 3: cadenaOperacion="En Reforma";break;
+		  }
+		return "Local [iDEstado=" + estadoOperacion + ", horarioApertura=" + horarioApertura + ", direccionLocal="
 				+ direccionLocal + ", localidad=" + localidad + ", gerenteLocal=" + gerenteLocal + ", codigoPostal="
 				+ codigoPostal + ", metros=" + metros + "]";
+		  }
 	}
 
-}
+

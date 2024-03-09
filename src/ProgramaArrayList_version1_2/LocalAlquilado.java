@@ -10,14 +10,20 @@ public class LocalAlquilado extends Local{
 	private String fechaFinContrato;
 	
 	
-	public LocalAlquilado(String propietarioLocal,String telefonoPropietario,String correoPropietario,String direccionProp,String fechaInicioContrato,String fechaFinContrato, int estadoOperacion, String horarioApertura, String direccionLocal, String localidad, String gerenteLocal, int codigoPostal,double metros) {
-		super(estadoOperacion,horarioApertura,direccionLocal,localidad,gerenteLocal,codigoPostal,metros);
-		this.propietarioLocal=propietarioLocal;
-		this.telefonoPropietario=telefonoPropietario;
-		this.correoPropietario=correoPropietario;
-		this.direccionProp=direccionProp;
-		this.fechaInicioContrato=fechaInicioContrato;
-		this.fechaFinContrato=fechaFinContrato;
+	public LocalAlquilado(String propietarioLocal, String telefonoPropietario,
+			String correoPropietario, String direccionProp, String fechaInicioContrato,
+			String fechaFinContrato, int estadoOperacion, String horarioApertura,
+			String direccionLocal, String localidad, String gerenteLocal,
+			int codigoPostal, double metros) {
+		
+	    super(estadoOperacion, horarioApertura, direccionLocal, localidad,
+	    		gerenteLocal, codigoPostal, metros);
+	    this.propietarioLocal = propietarioLocal;
+	    this.telefonoPropietario = telefonoPropietario;
+	    this.correoPropietario = correoPropietario;
+	    this.direccionProp = direccionProp;
+	    this.fechaInicioContrato = fechaInicioContrato;
+	    this.fechaFinContrato = fechaFinContrato;
 	}
 
 

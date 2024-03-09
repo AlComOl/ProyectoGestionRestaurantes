@@ -6,8 +6,12 @@ public class LocalPropio extends Local{
 	private String fechaCompra;
 	
 	
-	public LocalPropio( String iDEstado,String horarioApertura, String direccionLocal, String localidad, String gerenteLocal, int codigoPostal, double metros,String nombre, String fechaCompra) {
-		super(iDEstado,horarioApertura,direccionLocal,localidad,gerenteLocal,codigoPostal,metros);
+	public LocalPropio( int estadoOperacion, String horarioApertura, String direccionLocal, 
+			String localidad, String gerenteLocal, int codigoPostal,double metros,
+			String nombre, String fechaCompra) {
+		
+		super(estadoOperacion,horarioApertura,direccionLocal, 
+				localidad,gerenteLocal,codigoPostal,metros);
 		this.nombre=nombre;
 		this.fechaCompra=fechaCompra;
 	}
