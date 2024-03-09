@@ -16,7 +16,8 @@ public class Local {
 	protected static int id=0;
 	protected  int idLocal;
 	protected int estadoOperacion;
-	public final static int ABIERTO=0, CERRADO=1, ENREFORMA=2;
+//	public final static int ABIERTO=1, CERRADO=2, ENREFORMA=3;
+	//esta estructura almacena los tres estados dentro , ordenando el estado numerico y despues dando la cadena del arrary en el toString
 	protected static final String []estadoOperaciones= {"Abierto","Cerrado","EnReforma"};
 	protected String horarioApertura;
 	protected String direccionLocal;
@@ -123,17 +124,30 @@ public class Local {
 		this.metros = metros;
 	}
 
-
+	/******************************************
+	 * @descripcion la funcion devuelve todas las
+	 *  caracteristicas del local
+	 *  tambien tiene el switch que lo que hace es segun el 
+	 *  valor numerico muestra una de las 3 cadenas
+	 * 
+	 *******************************************/
 	@Override
 	public String toString() {
+		System.out.println("Las caracteristicas del local son:");
 		String cadenaOperacion="";
 		  switch (estadoOperacion){
-		  case 1: cadenaOperacion="Abierto";break;
-		  case 2: cadenaOperacion="Cerrado";break;
-		  case 3: cadenaOperacion="En Reforma";break;
+		  case 1: 
+			  cadenaOperacion="Abierto";
+		  break;
+		  case 2:
+			  cadenaOperacion="Cerrado";
+		  break;
+		  case 3: 
+			  cadenaOperacion="En Reforma";
+		  break;
 		  }
-		return "Local [iDEstado=" + estadoOperacion + ", horarioApertura=" + horarioApertura + ", direccionLocal="
-				+ direccionLocal + ", localidad=" + localidad + ", gerenteLocal=" + gerenteLocal + ", codigoPostal="
+		  	return "Local [idLocal" +idLocal+ "iDEstado=" + cadenaOperacion + ", horarioApertura=" + horarioApertura + ", direccionLocal="
+		  		+ direccionLocal + ", localidad=" + localidad + ", gerenteLocal=" + gerenteLocal + ", codigoPostal="
 				+ codigoPostal + ", metros=" + metros + "]";
 		  }
 	}

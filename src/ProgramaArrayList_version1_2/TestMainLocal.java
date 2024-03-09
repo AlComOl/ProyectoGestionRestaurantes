@@ -24,6 +24,7 @@ public class TestMainLocal {
 				int encontrado=buscaPorId(locales,idBuscar);
 				
 					if(encontrado!=-1) {
+//						Obtiene la posicion deonde esta el nombre y lo muestra
 					System.out.println(locales.get(encontrado).toString());
 					}else {
 						System.out.println("El IdLocal no está en el abase de datos");
@@ -61,7 +62,7 @@ public class TestMainLocal {
         System.out.println("1. Anadir Local");
         System.out.println("2. Busqueda de Locales por IDLOCAL int ");
         System.out.println("3. Busqueda de Locales por direccion (calle del local) ");
-        System.out.println("4. ");
+        System.out.println("4. Mostrar todos los Locales ");
         System.out.println("5. ");
         System.out.println("0. Salir");
         System.out.print("Ingrese su opcion: ");
@@ -106,7 +107,7 @@ public class TestMainLocal {
 				switch (key) {
 				case "1":
 					System.out.println("Introduce nombre Propietario del Local");
-					String propietarioLocal=sc.next();
+					String propietarioLocal=sc.nextLine();
 					System.out.println("Introduce telefono del Propietario del Local");
 					String telefonoPropietario=sc.next();
 					System.out.println("Introduce correo @electronico Propietario del Local ");
