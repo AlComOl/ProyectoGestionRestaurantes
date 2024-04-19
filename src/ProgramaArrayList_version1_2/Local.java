@@ -16,7 +16,7 @@ public class Local {
 	protected static int id=0;
 	protected  int idLocal;
 	protected int estadoOperacion;
-//	public final static int ABIERTO=1, CERRADO=2, ENREFORMA=3;
+	public final static int ABIERTO=1, CERRADO=2, ENREFORMA=3;
 	//esta estructura almacena los tres estados dentro , ordenando el estado numerico y despues dando la cadena del arrary en el toString
 	protected static final String []estadoOperaciones= {"Abierto","Cerrado","EnReforma"};
 	protected String horarioApertura;
@@ -146,7 +146,7 @@ public class Local {
 			  cadenaOperacion="En Reforma";
 		  break;
 		  }
-		  	return "Local [idLocal" +idLocal+ "iDEstado=" + cadenaOperacion + ", horarioApertura=" + horarioApertura + ", direccionLocal="
+		  	return "Local [idLocal  nº" +idLocal+ " iDEstado=" + cadenaOperacion + ", horarioApertura=" + horarioApertura + ", direccionLocal="
 		  		+ direccionLocal + ", localidad=" + localidad + ", gerenteLocal=" + gerenteLocal + ", codigoPostal="
 				+ codigoPostal + ", metros=" + metros + "]";
 		  }

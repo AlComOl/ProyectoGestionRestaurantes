@@ -82,11 +82,11 @@ public class TestMainLocal {
 		int estadoOperacion=sc.nextInt();
 		sc.nextLine();
 		System.out.println("Introduce horarios del Local");
-		String horarioApertura=sc.next();
+		String horarioApertura=sc.nextLine();
 		System.out.println("Introduce direccion del Local ");
 		String direccionLocal=sc.nextLine();
 		sc.nextLine();
-		System.out.println("Introduce  Localidad Local ");
+		System.out.println("Introduce Localidad Local ");
 		String localidad=sc.next();
 		sc.nextLine();
 		System.out.println("Introduce Nombre y Apellido Gerente Local Local ");
